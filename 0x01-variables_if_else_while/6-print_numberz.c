@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints num from 0 to 9
+ * main - Print all singel digit numbers
  *
- * return - Always(0) Success
+ * Description: Without using the var char
+ * Return: Always(0) Success
  */
 int main(void)
 {

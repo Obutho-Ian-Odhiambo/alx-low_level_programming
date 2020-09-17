@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints num from 0 to 9
+ * main - Prints a list of numbers
  *
- * return - Always(0) Success
+ * Description: The numbers are all single digits
+ * Return: Always(0) Success
  */
 int main(void)
 {

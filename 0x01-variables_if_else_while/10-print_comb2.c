@@ -1,10 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - prints all combinations 0 to 9 in twos
+ * main - Print 2 digit numbers
  *
- * return - Always(0) Success
- *
+ * Description: Should appear in the formart provided
+ * Return: Always(0) Success
  */
 int main(void)
 {

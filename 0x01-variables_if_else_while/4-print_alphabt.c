@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
- * main prints a sequence of alphabets in lower case ! q e
+ * main - prints all lower case alphabets
  *
- * return - Always (0) Success
+ * Description: q and e are excluded from the output
+ * Return: Always(0) Success
  */
 int main(void)
 {

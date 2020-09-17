@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
- * main prints a sequence of alphabets in lower case
+ * main - Prints a list of alphabets
  *
- * return - Always (0) Success
+ * Description: The alphabets are in reverse order
+ * Return: Always(0) Success
  */
 int main(void)
 {

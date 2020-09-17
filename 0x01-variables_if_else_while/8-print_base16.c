@@ -1,9 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - prints hex in lower case
+ * main - print all hexadecimal numbers
  *
- * return - Always (0) Success
+ * Description: Followed by the aplhas in lower case
+ * Return: Always(0) Success
  */
 int main(void)
 {

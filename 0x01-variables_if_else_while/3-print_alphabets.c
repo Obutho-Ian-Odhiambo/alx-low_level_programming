@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
- * main prints a sequence of alphabets *
- * return - Always (0) Success
+ * main - Prints lower case and upper case alphabets
+ *
+ * Description: They are sorted by deafult
+ * Return: Always(0) Success
  */
 int main(void)
 {

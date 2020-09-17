@@ -1,10 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - prints all combinations 0 to 9
+ * main - Print single digit numbers in the formart
  *
- * return - Always(0) Success
- *
+ * Description: Sepaeated by commas
+ * Return: Always(0) Success
  */
 int main(void)
 {
