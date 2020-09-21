@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- * main - prints all aphabets in lowercase
+ * print_alphabet - prints all aphabets in lowercase
  *
  * Description: They are sorted by default
- * Return: Always(0) Success
+ *
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char alphabet;
 
@@ -14,5 +14,4 @@ int print_alphabet(void)
 		_putchar(alphabet);
 	}
 	_putchar('\n');
-	return (0);
 }

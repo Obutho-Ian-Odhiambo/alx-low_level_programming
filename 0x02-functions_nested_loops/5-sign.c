@@ -6,13 +6,13 @@
  * Description: checks signs of numbers
  * Return: Always(0) Success
  */
-int print_sign(char num)
+int print_sign(int n)
 {
 
-	if (num > 0)
+	if (n > 0)
 		return(1);
 
-	else if (num == 0)
+	else if (n == 0)
 		return(0);
 
 	else 

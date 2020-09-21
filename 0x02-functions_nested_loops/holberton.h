@@ -1,9 +1,9 @@
 int _putchar(char c);
-int print_alphabet();
-int print_alphabet_x10();
-int _islower(char alphabet);
-int _isalpha(char alphabet);
-int print_sign(char num);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
 int _abs(int);
 int print_last_digit(int);
 void times_table(void);

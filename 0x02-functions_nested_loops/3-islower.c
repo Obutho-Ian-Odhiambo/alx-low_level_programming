@@ -5,11 +5,11 @@
  * Description: 
  * Return: Always(0) Success
  */
-int _islower(char alphabet)
+int _islower(int c)
 {
-	if (alphabet >= 'a' && alphabet <= 'z')
+	if (c >= 'a' && c <= 'z')
 		return (1);
-	else if (alphabet >= 'A' && alphabet <= 'Z')
+	else if (c >= 'A' && c <= 'Z')
 		return (0);
 	else
 		return (1);
