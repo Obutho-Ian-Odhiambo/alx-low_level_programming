@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_last_digit - prints the lest digit 
+ * print_last_digit - prints the lest digit
  * @c: first parameter
  *
  * Description: prints the last digit
@@ -13,7 +13,8 @@ int print_last_digit(int c)
 	d = c % 10;
 
 	if (d < 0)
-		d = d * -1;
+		d *= -1;
 
-	return (_putchar(d + '0'));
+	_putchar(d  + '0');
+	return (d);
 }
