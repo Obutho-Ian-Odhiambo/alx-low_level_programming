@@ -19,7 +19,8 @@ int main(void)
 		if (i == 50)
 		{
 			/* printf("%d", f2);*/
-		} else{
+		} else
+		{
 			/* printf("%d, ", f2);*/
 			next = f1 + f2;
 			f1 = f2;

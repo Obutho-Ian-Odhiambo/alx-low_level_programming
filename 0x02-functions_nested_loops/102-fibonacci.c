@@ -21,7 +21,9 @@ int main(void)
 		}
 		else
 		{
-			printf("%d, ", f2);
+			printf("%d", f2);
+			printf(",");
+			printf("\n");
 			next = f1 + f2;
 			f1 = f2;
 			f2 = next;
