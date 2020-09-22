@@ -2,7 +2,7 @@
 /**
  * main - prints fibonnaci numbers
  *
- * Description: prints from 1 to 98
+ * Description: prints from 1 to 50
  * Return: Always(0) Success
  */
 int main(void)
@@ -11,9 +11,9 @@ int main(void)
 	int next, start;
 
 	start = 1;
-	n = 98;
+	n = 50;
 
-	while (start <= n)
+	while (start <= 50)
 	{
 		for (i = 1; i <= n; i++)
 		{
