@@ -8,22 +8,19 @@
 int main(void)
 {
 	int f1 = 0, f2 = 1, i, n;
-	int next, start;
+	int next;
 
-	start = 1;
+
 	n = 50;
 
-	while (start <= 50)
+	for (i = 1; i <= n; i++)
 	{
-		for (i = 1; i <= n; i++)
-		{
-			printf("%d, ", f2);
-			next = f1 + f2;
-			f1 = f2;
-			f2 = next;
-		}
-		printf("\n");
-		start += 1;
+		printf("%d, ", f2);
+		next = f1 + f2;
+		f1 = f2;
+		f2 = next;
 	}
+	printf("\n");
+
 	return (0);
 }
