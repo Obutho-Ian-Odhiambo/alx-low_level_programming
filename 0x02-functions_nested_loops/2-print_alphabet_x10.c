@@ -1,24 +1,24 @@
 #include "holberton.h"
 /**
- * main - prints all aphabets in lowercase 10 times
+ * print_alphabet_x10 - prints alphabets 10
  *
- * Description: They are sorted by default 10 times
+ * Description: prints 10 times
  * Return: Always(0) Success
  */
-int print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
-	char alphabet;
 	int x;
+	char c;
 
-	for (x = 0; x <= 10; x++)
+	x = 1;
+
+	while (x <= 10)
 	{
-
-		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar(alphabet);
+			_putchar(c);
 		}
-		_putchar('\n');
-	}
 	_putchar('\n');
-	return (0);
+	x += 1;
+	}
 }

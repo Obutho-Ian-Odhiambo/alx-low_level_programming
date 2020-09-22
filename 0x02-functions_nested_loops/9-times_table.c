@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * main - 
+ * times_table - prints the 9 table
  *
- * Description: 
-i* Return: Always(0) Success
+ * Description: prints all the nine table
+ * Return: Always(0) Success
  */
 void times_table(void)
 {
@@ -11,24 +11,26 @@ void times_table(void)
 	int step;
 	int start;
 	int end;
-
 	int x;
-	x = 0;
 
+	x = 0;
 	step = 0;
 	end = 9;
+
 
 	do {
 
 		for (start = 0; start <= end; start++)
 		{
 			result = start * step;
-			_putchar((result/10) + '0');
-			_putchar((result%10) + '0');
+			_putchar((result / 10) + '0');
+			_putchar((result % 10) + '0');
 
-			if (start == 9){
+			if (start == 9)
+			{
 				break;
-			} else{
+			} else
+			{
 				_putchar(',');
 				_putchar(' ');
 
@@ -40,6 +42,4 @@ void times_table(void)
 		x += 1;
 
 	} while (x <= 9);
-
-	return;
 }

@@ -1,10 +1,12 @@
 #include "holberton.h"
 
 /**
- * main - 
+ * add - add two numbers from input
+ * @a: first aparamet
+ * @b: second parameter
  *
- * Description: 
- * Return: Always(0) Success
+ * Description: adds numbers
+ * Return: Success
  */
 int add(int a,  int b)
 {
