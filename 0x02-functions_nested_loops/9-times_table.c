@@ -23,9 +23,15 @@ void times_table(void)
 		for (start = 0; start <= end; start++)
 		{
 			result = start * step;
-			_putchar((result / 10) + '0');
-			_putchar((result % 10) + '0');
-
+			if (result <= 9)
+			{
+				_putchar(result + '0');
+			}
+			else
+			{
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
+			}
 			if (start == 9)
 			{
 				break;
