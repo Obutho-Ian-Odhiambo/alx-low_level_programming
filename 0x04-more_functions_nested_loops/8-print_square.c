@@ -19,13 +19,12 @@ void print_square(int size)
 	}
 	else
 	{
-		do 
-		{
+		do {
 			for (num = 1; num <= size; num++)
 				_putchar('#');
 			x += 1;
 			_putchar('\n');
-		}
-		while (x <= size);
+
+		} while (x <= size);
 	}
 }
