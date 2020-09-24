@@ -27,6 +27,5 @@ void more_numbers(void)
 			}
 		}
 		count += 1;
-		_putchar('\n');
 	}
 }
