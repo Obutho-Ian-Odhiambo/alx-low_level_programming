@@ -1,31 +1,30 @@
 #include "holberton.h"
 /**
- * print_diagonal - Prints a list of back escape
- * @n: first parameter
+ * print_triangle - Prints a list of # triangle
+ * @size: first parameter
  *
- * Description: The back escape depend on input
+ * Description: The triangle depend on input
  * Return: Always(0) Success
  */
-void print_diagonal(int n)
+void print_triangle(int size)
 {
 	int num;
 	int space;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (num = 1; num <= n; num++)
+		for (num = 1; num <= size; num++)
 		{
-			if (num <= n)
+			if (num <= size)
 			{
-				for (space = 0; space < num; space++)
+				for (space = 1; space <= num; space++)
 				{
-					_putchar(' ');
+					_putchar('#');
 				}
-				_putchar('\\');
 			}
 			_putchar('\n');
 		}
