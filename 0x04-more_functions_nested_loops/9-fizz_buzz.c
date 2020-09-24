@@ -21,7 +21,7 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else if ((start % 3 == 0) && (start % 5 == 0))
+		else if (start % 15 == 0)
 		{
 			printf("FizzBuzz ");
 		} else
