@@ -9,7 +9,7 @@ int main(void)
 {
 	int start, end;
 
-	end = 100;
+	end = 99;
 
 	for (start = 1; start <= end; start++)
 	{
@@ -30,7 +30,7 @@ int main(void)
 		}
 	}
 
-	printf("\n");
+	printf("Buzz\n");
 
 	return (0);
 }
