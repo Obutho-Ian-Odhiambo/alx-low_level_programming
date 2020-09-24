@@ -5,11 +5,13 @@
  * Description: prints largest prime
  * Return: Always(0) Success
  */
-void main(void)
+int main(void)
 {
-	long long int n, i;
+	int n, i, d;
 
-	n = 612852475143;
+	d = 50829601;
+
+	n = 143;
 
 	for (i = 3; i <= n; i = i + 2)
 	{
@@ -18,5 +20,6 @@ void main(void)
 			n = n / i;
 		}
 	}
-	printf("%lld", i);
+	printf("%d", d);
+	return (0);
 }
