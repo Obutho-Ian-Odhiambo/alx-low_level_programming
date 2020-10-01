@@ -6,35 +6,21 @@
  * Description: leet is 1337
  * Return: Always(0) Success
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int x = 0;
-	char *str = s;
+	int i, j;
+	char s[] = "aAeEoOtTlL";
+	char s1[] = "4433007711";
 
-	while (s[x] != '\0')
+	i = 0;
+
+	for  (; str[i] != '\0'; ++i)
 	{
-		if ((s[x] == 'a') || (s[x] == 'A'))
+		for (j = 0; j <= 9; ++j)
 		{
-			s[x] = '4';
+			if (s[j] == str[i])
+				str[i] = s1[j];
 		}
-		else if ((s[x] == 'e') || (s[x] == 'E'))
-		{
-			s[x] = '3';
-		}
-		else if ((s[x] == 'o') || (s[x] == 'O'))
-		{
-			s[x] = '0';
-		}
-		else if ((s[x] == 't') || (s[x] == 'T'))
-		{
-			s[x] = '7';
-		}
-		else if ((s[x] == 'l') || (s[x] == 'L'))
-		{
-			s[x] = '1';
-		}
-
-		x++;
 	}
 	return (str);
 }
