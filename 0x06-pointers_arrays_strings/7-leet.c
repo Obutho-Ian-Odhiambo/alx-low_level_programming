@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * leet - converts string to leet
- * *s: first parameter
+ * @str: first parameter
  *
  * Description: leet is 1337
  * Return: Always(0) Success
