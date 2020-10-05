@@ -1,25 +1,26 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - 
+ * print_diagsums - prints the sum of the two diagonals of a square
+ * @a: first parameter
+ * @size: second parameter
  *
- * Description: 
+ * Description: prints the sum of the two diagonals of a square
  * Return: Always(0) Success
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, d1 = 0, d2 = 0;
+	int i, j, sum1 = 0, sum2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		for(j = 0;j < size; ++j)
+		for (j = 0; j < size; j++)
 		{
-			if(i == j)
-				d1 += *((a + i * 4) + j);
-			if((i + j) == (size - 1))
-				d2 += *((a + i * 4) + j);
+			if (i == j)
+				sum1 += *((a + i * size) + j);
+			if ((i + j) == (size - 1))
+				sum2 += *((a + i * size) + j);
 		}
 	}
-	printf("\nFirst Diagonal Sum=%d",d1);
-	printf("\nSecond Diagonal Sum=%d",d2);
+	printf("%d, %d\n", sum1, sum2);
 }
