@@ -8,20 +8,26 @@
  */
 int _sqrt_recursion(int n)
 {
-	int x = 1;
-	int mid = n / 2;
+	return (sqrt_value(1, n));
+}
 
-	if (n == 1)
-		return (1);
+/**
+ * sqrt_value - recursion function to find square root
+ * @a: integer to be squared
+ * @b: integer that is square of @a
+ * Return: Integer
+ */
 
-	while (mid >= x)
+int sqrt_value(int a, int b)
+{
+	if (a * a > b)
 	{
-		if (mid * mid == n)
-		{
-			return (mid);
-		}
-		mid--;
+		return (-1);
 	}
-
-	return (-1);
+	if (a * a == b)
+	{
+		return (a);
+	}
+	else
+		return (sqrt_value((a + 1), b));
 }
