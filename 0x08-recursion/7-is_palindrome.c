@@ -8,36 +8,49 @@
  */
 int is_palindrome(char *s)
 {
-	return (palindrome(s, 0));
+	int length;
+
+	length = str_length(s);
+
+	return (find_palindrome(s, length));
 }
 
 /**
- * palindrome - returns 1 if a string is a palindrome and 0 if not
- * @s: first paramter
- * @n: second parameter
- *
- * Description: returns 1 if a string is a palindrome and 0 if not
- * Return: Always(0) Success
+ * str_length - returns the length of a string
+ * @s: receives variable s location
+ * Return: length of string of int
  */
 
-int palindrome(char *s, int n)
+int str_length(char *s)
 {
-	int i, len;
-
-	for (len = 0; s[len] != 0; len++)
+	if (*s == '\0')
 	{
-	}
-
-	for (i = 0; i < len / 2; i++)
-	{
-		if (s[i] == s[len - i - 1])
-		{
-			return (1);
-		}
-
 		return (0);
 	}
-	palindrome(s, n + 1);
+	else
+		return (1 + str_length(s + 1));
+}
 
-	return (0);
+/**
+ * find_palindrome - recursion function to check palindrome
+ * @s: string to check
+ * @index: iterate through string using @index
+ * Return: Integer
+ */
+
+int find_palindrome(char *s, int index)
+{
+	if (*s != *(s + index - 1))
+	{
+		return (0);
+	}
+	if (*s == '\0')
+	{
+		return (1);
+	}
+	else
+	{
+		find_palindrome(s, (index + 1));
+		return (1);
+	}
 }

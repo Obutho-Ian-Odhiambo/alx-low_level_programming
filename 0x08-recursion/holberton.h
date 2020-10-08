@@ -9,4 +9,5 @@ int sqrt_value(int a, int b);
 int is_prime_number(int n);
 int is_prime2(int a, int b);
 int is_palindrome(char *s);
-int palindrome (char *s, int n);
+int find_palindrome(char *s, int index);
+int str_length(char *s);
