@@ -1,19 +1,4 @@
 #include "holberton.h"
-/**
- * is_palindrome - returns 1 if a string is a palindrome and 0 if not
- * @s: first parameters
- *
- * Description: returns 1 if a string is a palindrome and 0 if not
- * Return: Always(0) Success
- */
-int is_palindrome(char *s)
-{
-	int length;
-
-	length = str_length(s);
-
-	return (find_palindrome(s, length));
-}
 
 /**
  * str_length - returns the length of a string
@@ -53,4 +38,20 @@ int find_palindrome(char *s, int index)
 		find_palindrome(s, (index + 1));
 		return (1);
 	}
+}
+
+/**
+ * is_palindrome - returns 1 if input integer is prime number, else return 0
+ * @s: string to check
+ *
+ * Return: Integer
+ */
+
+int is_palindrome(char *s)
+{
+	int length;
+
+	length = str_length(s);
+
+	return (find_palindrome(s, length));
 }
