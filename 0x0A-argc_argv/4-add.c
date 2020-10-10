@@ -13,8 +13,15 @@ int main(int argc, char *argv[])
 {
 	int x;
 	int sum;
+	int zero = 0;
 	char error[10] = "Error";
 
+
+	if (argc == 1)
+	{
+		printf("%d\n", zero);
+		return (0);
+	}
 
 	for (x = 0; x < argc; x++)
 	{
