@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "holberton.h"
+#include <string.h>
 /**
  * _calloc - function that allocates memory for an array
  * @nmemb: first parameter
@@ -21,5 +22,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (memory == NULL)
 		return (NULL);
 
+	memset(memory, 0, (nmemb * size));
 	return (memory);
 }
