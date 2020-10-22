@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int calc, num1, num2;
-	char operator[1];
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,17 +22,23 @@ int main(int argc, char *argv[])
 	}
 
 	num1 = atoi(argv[1]);
-	strcpy(operator, *(argv + 2));
+	f = get_op_func(*(argv + 2));
 	num2 = atoi(argv[3]);
 
 
-	if (get_op_func(operator) == NULL)
+	if (f == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	calc = (get_op_func(operator)(num1, num2));
+	/* if ((*op == '/' || *op == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}*/
+
+	calc = f(num1, num2);
 
 	printf("%d\n", calc);
 
