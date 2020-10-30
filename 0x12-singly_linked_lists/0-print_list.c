@@ -5,7 +5,7 @@
  * @h: first parameter
  *
  * Description - prints a list of nodes
- * Return - Number of nodes
+ * Return: Number of nodes
  */
 size_t print_list(const list_t *h)
 {
