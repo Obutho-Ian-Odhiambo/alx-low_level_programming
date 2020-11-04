@@ -20,7 +20,7 @@ int sum_listint(listint_t *head)
 	{
 		temp = head;
 		sum += temp->n;
-		temp = temp->next;
+		head = head->next;
 	}
 	return (sum);
 }
